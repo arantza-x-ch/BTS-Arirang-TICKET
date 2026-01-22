@@ -1,8 +1,6 @@
 <h1 align="center">Decorar Entrada BTS-ARIRANG</h1>
 <p align="center">
     <a href = "https://arantza-x-ch.github.io/BTS-Arirang-TICKET/" alt="Ir a la página web">
-        <img src="https://github.com/arantza-x-ch/BTS-Arirang-TICKET/blob/master/Assets/entrada4.png" alt="Entrada BTS Vacía" height="250"/></a>
-    <a href = "https://arantza-x-ch.github.io/BTS-Arirang-TICKET/" alt="Ir a la página web">
         <img src="https://github.com/arantza-x-ch/BTS-Arirang-TICKET/blob/master/Assets/BTS-ARIRANG-TIQUET.png" alt="Entrada BTS Vacía" height="250"/>
     </a>
 </p>
