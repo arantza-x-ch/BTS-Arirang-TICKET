@@ -1,7 +1,9 @@
 <h1 align="center">Decorar Entrada BTS-ARIRANG</h1>
 <p align="center">
     <a href = "https://arantza-x-ch.github.io/BTS-Arirang-TICKET/" alt="Ir a la página web">
-        <img src="https://github.com/arantza-x-ch/BTS-Arirang-TICKET/blob/master/Assets/entrada4.png" alt="Entrada BTS Vacía" height="250">
+        <img src="https://github.com/arantza-x-ch/BTS-Arirang-TICKET/blob/master/Assets/entrada4.png" alt="Entrada BTS Vacía" height="250"/></a>
+    <a href = "https://arantza-x-ch.github.io/BTS-Arirang-TICKET/" alt="Ir a la página web">
+        <img src="https://github.com/arantza-x-ch/BTS-Arirang-TICKET/blob/master/Assets/BTS-ARIRANG-TIQUET.png" alt="Entrada BTS Vacía" height="250"/>
     </a>
 </p>
 
@@ -15,7 +17,7 @@ Personalizar entrada falsa de BTS del tour ARIRANG, agregando pequeños 'sticker
 ## Descripción General del Proyecto
 
 El proyecto se desarrolla en JavaScript, para poder generar pequeñas imagenes y texto dentro de un canvas (sin limite de generación). Estas imagenes se podrán mover dentro del canvas. 
-El contenido del canvas es descargable o reseteable.
+El contenido del canvas es descargable y reseteable.
 
 
 ## Funcionamiento
@@ -43,7 +45,8 @@ BTS-Arirang-TICKET/
 |    ├── 21RM.png
 |    ├── 21SUGA.png
 |    ├── 21V.png
-|    ├── TekoLight-Medium_2.Woff2
+|    ├── BTS-ARIRANG-TIQUET.png
+|    ├── TekoLight-Medium_2.Woff2BTS-ARIRANG-TIQUET.png
 |    ├── bts-logo.png
 |    ├── cover_arirang.png
 |    ├── download.png
@@ -67,5 +70,5 @@ Tamaño de la imagenes/stickers:  50 x 50 px.
 
 ### Entrada/ Ticket
 
-Nota: dentro del proyecto hay varias versiones para su uso.<br>
+Nota: Dentro del proyecto hay varias versiones para su uso.<br>
 Tamaño de la entrada/ticket:  1350 x 750 px.
