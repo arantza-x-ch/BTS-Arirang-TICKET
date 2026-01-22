@@ -1,0 +1,271 @@
+/* *** External Font *** */
+@font-face {
+  font-family: 'Teko';
+  	src: url(Assets/TekoLight-Medium_2.woff2); 	 
+}
+
+body {
+  background-color:#f5f4f0; 
+  margin: 0px auto;
+  padding: 1rem 0rem 2rem; 
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+
+h1 {
+  color: #555555;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+h1, h3{
+  font-family: Castoro, serif;
+}
+
+p {
+  color: #555555;
+  font-size: 0.5em;
+  margin-top: -8px;
+}
+
+.nav { 
+  padding: 0;
+  margin-top: 2vh;
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;     
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+/* *** Mobile *** */
+@media (max-width: 768px) {
+  .nav {
+    width: 90vw;  
+  } 
+  #description h1{
+    font-size: 11px;
+  }
+  #canva-container {
+    width: 80vw;
+    max-width: 90vw;
+    margin-top: 5px;
+  }
+ /* #tour-container, #tour-dates-container{
+    width: 80vw;
+    max-width: 90vw;   
+  }*/
+  #tour-container{
+    margin: 5px 5px 0px;  
+  }
+   
+ .continent-container {
+    padding-top:5px;
+    font-size: 5px;
+    overflow-wrap: break-word;
+    justify-content: center;
+    align-items: center; 
+  } 
+  .dates-container {
+    font-size: 5px; 
+     background-color: rgb(213, 31, 31); 
+  }
+ 
+} 
+
+.sticker-container {
+  margin-top: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;     
+  justify-content: flex-start; 
+  gap: 0.2vh;
+}
+
+.buttons-container {
+  display: flex; 
+  align-items: center;   
+}
+
+.buttons-container button {
+  margin-left: 5px;
+  height: 5vw;
+  width: 5vw;
+  cursor: pointer;
+  /*background-color: plum;*/
+}
+
+.button-container {  
+  padding-top: 2vh;
+  display: flex;
+  flex-direction: row;   
+  align-items: center; 
+  justify-content: center; 
+  gap: 20px; 
+}
+
+button {
+  background-color: #ffff;
+  padding: 0.4rem 0.5rem;
+  color: var(--main-text);
+  font-family: Castoro, serif;
+  font-size: 1.2rem;
+  font-weight: 400; 
+  border: solid 1px rgb(213, 31, 31);
+  border-radius: 0.5rem;
+  text-align: center;
+  transition: transform 0.2s ease-in-out; 
+}
+
+button:first-child, button:last-child{
+  border-color: #1e1e1e;
+  border-radius: 50px;
+  background-color: transparent;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background-color: #f8232391;
+}
+ 
+.sticker-btn {
+  width: 15%;
+  aspect-ratio: 75/60;
+  background-size: cover;
+  background-position: center; 
+  cursor: pointer;
+  margin: 0;
+  font-size: 0;  
+  background-color: #f8232343;  
+  outline: none;                
+  padding-left: 1vw;
+  padding-right: 1vw; 
+}
+
+ 
+.JN-btn {
+  background-image: url("Assets/21JIN.png");
+}
+.NMJ-btn {
+  background-image: url("Assets/21RM.png");
+}
+
+.SG-btn {
+  background-image: url("Assets/21SUGA.png");
+}
+
+.HB-btn {
+  background-image: url("Assets/21JHOPE.png");
+}
+
+.JMN-btn {
+  background-image: url("Assets/21JIMIN.png");
+}
+
+.V-btn {
+  background-image: url("Assets/21V.png");
+}
+.JK-btn {
+  background-image: url("Assets/21JK.png");
+}
+.BTS-btn {
+  background-image: url("Assets/bts-logo.png");
+}
+button:first-child{
+  background-image: url("Assets/download.png");
+  background-repeat: no-repeat;
+  background-size: 70%;
+}
+.reset-btn {
+  background-image: url("Assets/reset.png");
+}
+
+#canva-container {
+  background-color:#f5f4f0;
+  border: dotted 1px #1e1e1e ;   
+  margin-top: 20px;
+  position: relative; 
+  display: flex;
+  justify-content: center;   
+  align-items: center;       
+}
+
+div#canva-container {
+    width: 60vw;
+    max-width: 90vw;
+}
+
+canvas {
+  width: 100%;
+  height: auto;            
+  /*background: #fff;*/
+  cursor: grab;
+  display: block;          
+}
+
+#tiquet-canva {
+  width: 100%;
+  height: auto;  
+  cursor: grab;
+}
+ 
+#tour-container, #tour-dates-container{  
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center; 
+}
+#tour-container{ 
+  margin-top: 20px;   
+}
+
+.continent-container, .dates-container{
+  background-color: rgb(213, 31, 31);  
+  width: 15vw;  
+  align-items: center;
+}
+.continent-container{
+  text-align: center;
+  color: beige; 
+  margin:5px; 
+}
+.dates-container{
+  margin:5px;  
+}
+
+.dates-container{
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 26vw;
+  background-color: rgb(213, 31, 31);
+}
+
+.dates-container::-webkit-scrollbar {
+  display: none;
+}
+
+.date{
+  margin-top: 10px;
+  padding: 5px;
+  background-color: #f5f4f0;
+  color: #555555;
+} 
+
+.date p{
+  font-size: 0.7em;
+}
+
+.date:hover{
+  background-color:  rgb(213, 31, 31);
+  color: #f5f4f0;
+}
+
+.date:hover >  p{
+  color: #f5f4f0;
+}

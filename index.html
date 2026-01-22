@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">  
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Personalizar Entrada BTS</title>                          <!-- Change Title -->
+        <link rel="icon" href="Assets/e.png" type="image/x-icon">        <!-- Change Icon -->
+
+        <link rel="stylesheet" href="index.css">                         <!-- Style -->
+        <script type="module" src="main.js"></script>                    <!-- Code -->
+    </head>
+    <body>  
+        <header></header>  
+        <div class="nav">  
+            <div id="description">
+                <h1>¡Selecciona una fecha, agrega tantos stickers como quieras y disfruta!<br>¡¡¡No te olvides de descargarlo!!!</h1> 
+            </div>
+            <div class="sticker-container"> 
+                <div class="buttons-container"> 
+                    <button  id="downloadBtn" class="sticker-btn downloadBtn" title="Descargar">Descargar</button>
+
+                    <button id="addJN" class="sticker-btn JN-btn" title="Insertar sticker JIN">Add JN</button>
+                    <button id="addNMJ" class="sticker-btn NMJ-btn" title="Insertar sticker RM">Add RM</button>
+                    <button id="addSG" class="sticker-btn SG-btn" title="Insertar sticker SUGA">Add SG</button>
+                    <button id="addHB" class="sticker-btn HB-btn" title="Insertar sticker JHOPE">Add HB</button>
+                    <button id="addJMN" class="sticker-btn JMN-btn" title="Insertar sticker JIMIN">Add JMN</button>
+                    <button id="addV" class="sticker-btn V-btn" title="Insertar sticker V">Add V</button>
+                    <button id="addJK" class="sticker-btn JK-btn" title="Insertar sticker JK">Add JK</button>
+
+                    <button id="addBTS" class="sticker-btn BTS-btn" title="Insertar sticker Logo BTS">Add Logo BTS</button>
+
+                    <button id="resetBtn" class="sticker-btn reset-btn" title="Resetar Stickers y Fecha">Reset</button>
+                </div>
+            </div>
+        </div> 
+
+        <div id="canva-container">  
+            <canvas id="tiquet-canva" width="1000" height="500" style="font-family:teko;">
+        </div>
+        
+        <div id="tour-container"> 
+            <div class="continent-container">
+                 <h2>ASIA</h2> 
+            </div>
+            <div class="continent-container">
+                <h2>NORTH AMERICA</h2> 
+            </div>
+            <div class="continent-container">
+                <h2>LATINOAMÉRICA</h2> 
+            </div>
+            <div class="continent-container"> 
+                <h2>EUROPA</h2> 
+            </div>
+            <div class="continent-container">
+                <h2>AUSTRALIA</h2>
+            </div> 
+        </div>
+        <div id="tour-dates-container">
+            <div id="ASIA" class="dates-container"></div>
+            <div id="NORTH-AMERICA" class="dates-container"></div>
+            <div id="LATIN-AMERICA" class="dates-container"></div> 
+            <div id="EUROPE" class="dates-container"></div>
+            <div id="AUSTRALIA" class="dates-container"></div>
+        </div>  
+        <footer></footer>
+    </body>
+</html>

@@ -1,0 +1,636 @@
+{
+    "concert_dates":[
+        {
+            "day": "09",
+            "month": "APRIL",
+            "city": "GOYANG",
+            "country": "KR",
+            "time":"19:00",
+            "continent":"ASIA"
+        },
+        {
+            "day": "11",
+            "month": "APRIL",
+            "city": "GOYANG",
+            "country": "KR",
+            "time":"19:00",
+            "continent":"ASIA"
+        },
+        {
+            "day": "12",
+            "month": "APRIL",
+            "city": "GOYANG",
+            "country": "KR",
+            "time":"19:00",
+            "continent":"ASIA"
+        },
+        {
+            "day": "17",
+            "month": "APRIL",
+            "city": "TOKYO",
+            "country": "JP",
+            "time":"19:00",
+            "continent":"ASIA"
+        },
+        {
+            "day": "18",
+            "month": "APRIL",
+            "city": "TOKYO",
+            "country": "JP",
+            "time":"19:00",
+            "continent":"ASIA"
+        },
+        {
+            "day": "25",
+            "month": "APRIL",
+            "city": "TAMPA",
+            "country": "USA",
+            "time":"20:00",
+            "continent":"NORTH-AMERICA" 
+        },
+        {
+            "day": "26",
+            "month": "APRIL",
+            "city": "TAMPA",
+            "country": "USA",
+            "time":"20:00",
+            "continent":"NORTH-AMERICA" 
+        },
+        {
+            "day": "02",
+            "month": "MAY",
+            "city": "EL PASO",
+            "country": "USA",
+            "time":"20:00",
+            "continent":"NORTH-AMERICA" 
+        },
+        {
+            "day": "03",
+            "month": "MAY",
+            "city": "EL PASO",
+            "country": "USA",
+            "time":"20:00",
+            "continent":"NORTH-AMERICA" 
+        },
+        {
+            "day": "07",
+            "month": "MAY",
+            "city": "MEXICO CITY",
+            "country": "MX",
+            "time":"20:00",
+            "continent":"LATIN-AMERICA"
+        },
+        {
+            "day": "09",
+            "month": "MAY",
+            "city": "MEXICO CITY",
+            "country": "MX",
+            "time":"20:00",
+            "continent":"LATIN-AMERICA"
+        },
+        {
+            "day": "10",
+            "month": "MAY",
+            "city": "MEXICO CITY",
+            "country": "MX",
+            "time":"20:00",
+            "continent":"LATIN-AMERICA"
+        },
+        {
+            "day": "16",
+            "month": "MAY",
+            "city": "STANFORD",
+            "country": "USA",
+            "time":"20:00",
+            "continent":"NORTH-AMERICA"
+        },
+        {
+            "day": "17",
+            "month": "MAY",
+            "city": "STANFORD",
+            "country": "USA",
+            "time":"20:00",
+            "continent":"NORTH-AMERICA"
+        },
+        {
+            "day": "23",
+            "month": "MAY",
+            "city": "LAS VEGAS",
+            "country": "USA",
+            "time":"20:00",
+            "continent":"NORTH-AMERICA"
+        },
+        {
+            "day": "24",
+            "month": "MAY",
+            "city": "LAS VEGAS",
+            "country": "USA",
+            "time":"20:00",
+            "continent":"NORTH-AMERICA"
+        },
+        {
+            "day": "27",
+            "month": "MAY",
+            "city": "LAS VEGAS",
+            "country": "USA",
+            "time":"20:00",
+            "continent":"NORTH-AMERICA"
+        },
+        {
+            "day": "12",
+            "month": "JUNE",
+            "city": "BUSAN",
+            "country": "KR",
+            "time":"20:00",
+            "continent":"ASIA"
+        },
+        {
+            "day": 13,
+            "month": "JUNE",
+            "city": "BUSAN",
+            "country": "KR",
+            "time":"20:00",
+            "continent":"ASIA"
+        },
+        {
+            "day": "26",
+            "month": "JUNE",
+            "city": "MADRID",
+            "country": "ES",
+            "time":"20:00",
+            "continent":"EUROPE"
+        },
+        {
+            "day": "27",
+            "month": "JUNE",
+            "city": "MADRID",
+            "country": "ES",
+            "time":"20:00",
+            "continent":"EUROPE"
+        },
+        {
+            "day": "01",
+            "month": "JULY",
+            "city": "BRUSSELS",
+            "country": "BE",
+            "time":"20:00",
+            "continent":"EUROPE"
+        },
+        {
+            "day": "02",
+            "month": "JULY",
+            "city": "BRUSSELS",
+            "country": "BE",
+            "time":"20:00",
+            "continent":"EUROPE"
+        },
+        {
+            "day": "06",
+            "month": "JULY",
+            "city": "LONDON",
+            "country": "ENG",
+            "time":"20:00",
+            "continent":"EUROPE"
+        },
+        {
+            "day": "07",
+            "month": "JULY",
+            "city": "LONDON",
+            "country": "ENG",
+            "time":"20:00",
+            "continent":"EUROPE"
+        },
+        {
+            "day": "11",
+            "month": "JULY",
+            "city": "MUNICH",
+            "country": "GER",
+            "time":"20:00",
+            "continent":"EUROPE"
+        },
+        {
+            "day": "12",
+            "month": "JULY",
+            "city": "MUNICH",
+            "country": "GER",
+            "time":"20:00",
+            "continent":"EUROPE"
+        },
+        {
+            "day": "17",
+            "month": "JULY",
+            "city": "PARIS",
+            "country": "FR",
+            "time":"20:00",
+            "continent":"EUROPE"
+        },
+        {
+            "day": "18",
+            "month": "JULY",
+            "city": "PARIS",
+            "country": "FR",
+            "time":"20:00",
+            "continent":"EUROPE"
+        },
+        {
+            "day": "01",
+            "month": "AUGUST",
+            "city": "EAST RUTHERFORD",
+            "country": "USA",
+            "time":"20:00",
+            "continent":"NORTH-AMERICA"
+        },
+        {
+            "day": "02",
+            "month": "AUGUST",
+            "city": "EAST RUTHERFORD",
+            "country": "USA",
+            "time":"20:00",
+            "continent":"NORTH-AMERICA"
+        },
+        {
+            "day": "05",
+            "month": "AUGUST",
+            "city": "FOXBOROUGH",
+            "country": "USA",
+            "time":"20:00",
+            "continent":"NORTH-AMERICA"
+        },
+        {
+            "day": "06",
+            "month": "AUGUST",
+            "city": "FOXBOROUGH",
+            "country": "USA",
+            "time":"20:00",
+            "continent":"NORTH-AMERICA"
+        },
+        {
+            "day": "10",
+            "month": "AUGUST",
+            "city": "BALTIMORE",
+            "country": "USA",
+            "time":"20:00",
+            "continent":"NORTH-AMERICA"
+        },
+        {
+            "day": "11",
+            "month": "AUGUST",
+            "city": "BALTIMORE",
+            "country": "USA",
+            "time":"20:00",
+            "continent":"NORTH-AMERICA"
+        },
+        {
+            "day": "15",
+            "month": "AUGUST",
+            "city": "ARLINGTON",
+            "country": "USA",
+            "time":"20:00",
+            "continent":"NORTH-AMERICA"
+        },  
+        {
+            "day": "16",
+            "month": "AUGUST",
+            "city": "ARLINGTON",
+            "country": "USA",
+            "time":"20:00",
+            "continent":"NORTH-AMERICA"
+        },  
+        {
+            "day": "22",
+            "month": "AUGUST",
+            "city": "TORONTO",
+            "country": "CAN",
+            "time":"20:00",
+            "continent":"NORTH-AMERICA"
+        },  
+        {
+            "day": "23",
+            "month": "AUGUST",
+            "city": "TORONTO",
+            "country": "CAN",
+            "time":"20:00",
+            "continent":"NORTH-AMERICA"
+        },  
+        {
+            "day": "27",
+            "month": "AUGUST",
+            "city": "CHICAGO",
+            "country": "USA",
+            "time":"20:00",
+            "continent":"NORTH-AMERICA"
+        },  
+        {
+            "day": "28",
+            "month": "AUGUST",
+            "city": "CHICAGO",
+            "country": "USA",
+            "time":"20:00",
+            "continent":"NORTH-AMERICA"
+        },  
+        {
+            "day": "01",
+            "month": "SEPTEMBER",
+            "city": "LOS ANGELES",
+            "country": "USA",
+            "time":"20:00",
+            "continent":"NORTH-AMERICA"
+        },  
+        {
+            "day": "02",
+            "month": "SEPTEMBER",
+            "city": "LOS ANGELES",
+            "country": "USA",
+            "time":"20:00",
+            "continent":"NORTH-AMERICA"
+        },  
+        {
+            "day": "05",
+            "month": "SEPTEMBER",
+            "city": "LOS ANGELES",
+            "country": "USA",
+            "time":"20:00",
+            "continent":"NORTH-AMERICA"
+        },  
+        {
+            "day": "06",
+            "month": "SEPTEMBER",
+            "city": "LOS ANGELES",
+            "country": "USA",
+            "time":"20:00",
+            "continent":"NORTH-AMERICA"
+        },  
+        {
+            "day": "02",
+            "month": "OCTOBER",
+            "city": "BOGOTA",
+            "country": "CO",
+            "time":"20:00",
+            "continent":"LATIN-AMERICA"
+        },  
+        {
+            "day": "03",
+            "month": "OCTOBER",
+            "city": "BOGOTA",
+            "country": "CO",
+            "time":"20:00",
+            "continent":"LATIN-AMERICA"
+        },  
+        {
+            "day": "09",
+            "month": "OCTOBER",
+            "city": "LIMA",
+            "country": "PR",
+            "time":"20:00",
+            "continent":"LATIN-AMERICA"
+        },  
+        {
+            "day": "10",
+            "month": "OCTOBER",
+            "city": "LIMA",
+            "country": "PR",
+            "time":"20:00",
+            "continent":"LATIN-AMERICA"
+        },  
+        {
+            "day": "16",
+            "month": "OCTOBER",
+            "city": "SANTIAGO",
+            "country": "CHL",
+            "time":"20:00",
+            "continent":"LATIN-AMERICA"
+        },  
+        {
+            "day": "17",
+            "month": "OCTOBER",
+            "city": "SANTIAGO",
+            "country": "CHL",
+            "time":"20:00",
+            "continent":"LATIN-AMERICA"
+        },  
+        {
+            "day": "23",
+            "month": "OCTOBER",
+            "city": "BUENOS AIRES",
+            "country": "ARG",
+            "time":"20:00",
+            "continent":"LATIN-AMERICA"
+        },  
+        {
+            "day": "24",
+            "month": "OCTOBER",
+            "city": "BUENOS AIRES",
+            "country": "ARG",
+            "time":"20:00",
+            "continent":"LATIN-AMERICA"
+        },  
+        {
+            "day": "28",
+            "month": "OCTOBER",
+            "city": "SÃO PAULO",
+            "country": "BR",
+            "time":"20:00",
+            "continent":"LATIN-AMERICA"
+        },  
+        {
+            "day": "30",
+            "month": "OCTOBER",
+            "city": "SÃO PAULO",
+            "country": "BR",
+            "time":"20:00",
+            "continent":"LATIN-AMERICA"
+        },  
+        {
+            "day": "31",
+            "month": "OCTOBER",
+            "city": "SÃO PAULO",
+            "country": "BR",
+            "time":"20:00",
+            "continent":"LATIN-AMERICA"
+        },  
+        {
+            "day": "19",
+            "month": "NOVEMBER",
+            "city": "KAOHSIUNG",
+            "country": "CN",
+            "time":"20:00",
+            "continent":"ASIA"
+        },  
+        {
+            "day": "21",
+            "month": "NOVEMBER",
+            "city": "KAOHSIUNG",
+            "country": "CN",
+            "time":"20:00",
+            "continent":"ASIA"
+        },  
+        {
+            "day": "22",
+            "month": "NOVEMBER",
+            "city": "KAOHSIUNG",
+            "country": "CN",
+            "time":"20:00",
+            "continent":"ASIA"
+        },  
+        {
+            "day": "03",
+            "month": "DECEMBER",
+            "city": "BANGKOK",
+            "country": "TH",
+            "time":"20:00",
+            "continent":"ASIA"
+        },  
+        {
+            "day": "05",
+            "month": "DECEMBER",
+            "city": "BANGKOK",
+            "country": "TH",
+            "time":"20:00",
+            "continent":"ASIA"
+        },  
+        {
+            "day": "06",
+            "month": "DECEMBER",
+            "city": "BANGKOK",
+            "country": "TH",
+            "time":"20:00",
+            "continent":"ASIA"
+        },  
+        {
+            "day": "12",
+            "month": "DECEMBER",
+            "city": "KUALA LUMPUR",
+            "country": "MY",
+            "time":"20:00",
+            "continent":"ASIA"
+        },  
+        {
+            "day": "13",
+            "month": "DECEMBER",
+            "city": "KUALA LUMPUR",
+            "country": "MY",
+            "time":"20:00",
+            "continent":"ASIA"
+        },  
+        {
+            "day": "17",
+            "month": "DECEMBER",
+            "city": "SINGAPORE",
+            "country": "SG",
+            "time":"20:00",
+            "continent":"ASIA"
+        },  
+        {
+            "day": "19",
+            "month": "DECEMBER",
+            "city": "SINGAPORE",
+            "country": "SG",
+            "time":"20:00",
+            "continent":"ASIA"
+        },  
+        {
+            "day": "20",
+            "month": "DECEMBER",
+            "city": "SINGAPORE",
+            "country": "SG",
+            "time":"20:00",
+            "continent":"ASIA"
+        },  
+        {
+            "day": "22",
+            "month": "DECEMBER",
+            "city": "SINGAPORE",
+            "country": "SG",
+            "time":"20:00",
+            "continent":"ASIA"
+        },  
+        {
+            "day": "26",
+            "month": "DECEMBER",
+            "city": "JAKARTA",
+            "country": "ID",
+            "time":"20:00",
+            "continent":"ASIA"
+        },  
+        {
+            "day": "27",
+            "month": "DECEMBER",
+            "city": "JAKARTA",
+            "country": "ID",
+            "time":"20:00",
+            "continent":"ASIA"
+        },  
+        {
+            "day": "12",
+            "month": "FEBRUARY",
+            "city": "MELBOURNE",
+            "country": "AUS",
+            "time":"20:00",
+            "continent":"AUSTRALIA"
+        },  
+        {
+            "day": "13",
+            "month": "FEBRUARY",
+            "city": "MELBOURNE",
+            "country": "AUS",
+            "time":"20:00",
+            "continent":"AUSTRALIA"
+        },  
+        {
+            "day": "20",
+            "month": "FEBRUARY",
+            "city": "SIDNEY",
+            "country": "AUS",
+            "time":"20:00",
+            "continent":"AUSTRALIA"
+        },  
+        {
+            "day": "21",
+            "month": "FEBRUARY",
+            "city": "SIDNEY",
+            "country": "AUS",
+            "time":"20:00",
+            "continent":"AUSTRALIA"
+        },  
+        {
+            "day": "04",
+            "month": "MARCH",
+            "city": "HONG KONG",
+            "country": "CN",
+            "time":"20:00",
+            "continent":"ASIA"
+        },  
+        {
+            "day": "06",
+            "month": "MARCH",
+            "city": "HONG KONG",
+            "country": "CN",
+            "time":"20:00",
+            "continent":"ASIA"
+        },  
+        {
+            "day": "07",
+            "month": "MARCH",
+            "city": "HONG KONG",
+            "country": "CN",
+            "time":"20:00",
+            "continent":"ASIA"
+        },  
+        {
+            "day": "13",
+            "month": "MARCH",
+            "city": "MANILA",
+            "country": "PHL",
+            "time":"20:00",
+            "continent":"ASIA"
+        },  
+        {
+            "day": "14",
+            "month": "MARCH",
+            "city": "MANILA",
+            "country": "PHL",
+            "time":"20:00",
+            "continent":"ASIA"
+        }         
+    ]
+}
