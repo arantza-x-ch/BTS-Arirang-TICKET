@@ -42,67 +42,65 @@ p {
   justify-content: flex-start;
   gap: 1rem;
 }
-
-/* *** Mobile *** */
-@media (max-width: 768px) {
-  .nav {
-    width: 90vw;  
-  } 
-  #description h1{
-    font-size: 11px;
-  }
-  #canva-container {
-    width: 80vw;
-    max-width: 90vw;
-    margin-top: 5px;
-  }
- /* #tour-container, #tour-dates-container{
-    width: 80vw;
-    max-width: 90vw;   
-  }*/
-  #tour-container{
-    margin: 5px 5px 0px;  
-  }
-   
- .continent-container {
-    padding-top:5px;
-    font-size: 5px;
-    overflow-wrap: break-word;
-    justify-content: center;
-    align-items: center; 
-  } 
-  .dates-container {
-    font-size: 5px; 
-     background-color: rgb(213, 31, 31); 
-  }
  
-} 
-
-.sticker-container {
-  margin-top: 0;
-  padding: 0;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;     
-  justify-content: flex-start; 
+.sticker-container-navigation, .sticker-container{
+  padding: 0; 
   gap: 0.2vh;
-}
-
-.buttons-container {
+  width: 15vw;
   display: flex; 
-  align-items: center;   
+  align-items: center;     
+  justify-content: space-around; 
+} 
+.sticker-container-navigation{
+  flex-direction: row;
 }
-
-.buttons-container button {
+.sticker-container {
+  margin-top: 20px;
+  flex-direction: column; 
+}
+.buttons-container-side, .buttons-container-top{
+  display: flex; 
+  align-items: center;  
+}
+.buttons-container-top{
+  width: 70vw;
+}
+ 
+.buttons-container-side{  
+  width: 15vw;  
+  height: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+} 
+.buttons-container-side button, .buttons-container-top button {
   margin-left: 5px;
   height: 5vw;
   width: 5vw;
-  cursor: pointer;
-  /*background-color: plum;*/
+  cursor: pointer; 
 }
 
-.button-container {  
+
+.buttons-container-top #submitName{
+  background-color: #f5f4f0;
+  border-style: none;
+  border-bottom: 1px solid #1e1e1e;
+  font-family: Teko;
+  font-size: 2em;
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-transform: uppercase; 
+  width: 27vw; 
+}
+.buttons-container-top #submitName:focus{
+  background: #b7b6b1;
+  color: #f5f4f0;
+  outline: none; 
+
+}
+
+.button-container-side {  
   padding-top: 2vh;
   display: flex;
   flex-direction: row;   
@@ -124,13 +122,13 @@ button {
   transition: transform 0.2s ease-in-out; 
 }
 
-button:first-child, button:last-child{
+#downloadBtn, .reset-btn{
   border-color: #1e1e1e;
   border-radius: 50px;
   background-color: transparent;
 }
 
-button:hover {
+button:hover, #downloadBtn:hover, input[type=checkbox] + label:hover {
   transform: scale(1.05);
   background-color: #f8232391;
 }
@@ -142,11 +140,14 @@ button:hover {
   background-position: center; 
   cursor: pointer;
   margin: 0;
-  font-size: 0;  
-  background-color: #f8232343;  
+  font-size: 0;    
   outline: none;                
   padding-left: 1vw;
   padding-right: 1vw; 
+}
+.sticker-container .buttons-container-side button{
+  background-color: #f8232343;
+
 }
 
  
@@ -176,15 +177,57 @@ button:hover {
   background-image: url("Assets/21JK.png");
 }
 .BTS-btn {
-  background-image: url("Assets/bts-logo.png");
+  background-image: url("Assets/21VAN.png");
 }
-button:first-child{
+#downloadBtn{
   background-image: url("Assets/download.png");
   background-repeat: no-repeat;
   background-size: 70%;
 }
 .reset-btn {
   background-image: url("Assets/reset.png");
+}
+
+input[type=checkbox] {
+    display:none;
+}
+
+input[type=checkbox] + label {
+ margin-left: 5px;
+  display:inline-block;
+  padding: 0 0 0 0px;
+  background:url("Assets/trash.png") no-repeat;
+  background-size: cover;
+  height: 5vw;
+  width: 5vw;  
+  border: solid 1px #1e1e1e;
+  border-radius: 50px;
+}
+
+
+input[type=checkbox]:checked + label { 
+  border: solid 1px rgb(213, 31, 31);
+  display:inline-block; 
+  background:url("Assets/trashred.png") no-repeat;
+  background-size: cover;
+  
+  background-color: #f8232343;
+}
+ 
+#nextBtn, #backBtn{
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position:center center;
+  height: 2vw;
+  border-style: none;
+  background-color: transparent;
+  background-image: url("Assets/trianglered.png");
+}
+#nextBtn{ 
+  transform: rotate(180deg);
+}
+#nextBtn:hover, #backBtn:hover{
+  background-image: url("Assets/triangleblack.png");
 }
 
 #canva-container {
@@ -269,3 +312,71 @@ canvas {
 .date:hover >  p{
   color: #f5f4f0;
 }
+
+#content{
+   width: 76vw;
+   display: flex; 
+   flex-wrap: wrap; 
+   justify-content: space-between;
+}
+
+/* *** Mobile *** */
+@media (max-width: 768px) {
+  .nav {
+    width: 90vw;  
+  } 
+  #description h1{
+    font-size: 11px;
+  }
+  #content{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  .buttons-container-top{
+    justify-content: center;
+  }
+  .buttons-container-top #submitName{
+    font-size: 0.9em;
+    max-width: 35vw;
+  }
+  .sticker-container{
+    margin-top: 10px;
+    min-width: 70vw; 
+    
+    flex-direction: row; 
+  }
+  .buttons-container-side{
+    flex-direction: row; 
+  }
+  .sticker-container .buttons-container-side{
+    flex-direction: row;
+    flex-wrap: nowrap;
+    min-width: 70vw;
+  }
+  #nextBtn, #backBtn { 
+    width: 2vw;
+  }
+  #canva-container {
+    width: 80vw;
+    max-width: 90vw;
+    margin-top: 5px;
+  } 
+  #tour-container{
+    margin: 5px 5px 0px;  
+  }
+   
+ .continent-container {
+    padding-top:5px;
+    font-size: 5px;
+    overflow-wrap: break-word;
+    justify-content: center;
+    align-items: center; 
+  } 
+  .dates-container {
+    font-size: 5px; 
+     background-color: rgb(213, 31, 31); 
+  }
+ 
+} 

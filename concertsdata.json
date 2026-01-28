@@ -57,6 +57,14 @@
             "continent":"NORTH-AMERICA" 
         },
         {
+            "day": "28",
+            "month": "APRIL",
+            "city": "TAMPA",
+            "country": "USA",
+            "time":"20:00",
+            "continent":"NORTH-AMERICA" 
+        },
+        {
             "day": "02",
             "month": "MAY",
             "city": "EL PASO",
@@ -113,6 +121,14 @@
             "continent":"NORTH-AMERICA"
         },
         {
+            "day": "19",
+            "month": "MAY",
+            "city": "STANFORD",
+            "country": "USA",
+            "time":"20:00",
+            "continent":"NORTH-AMERICA"
+        },
+        {
             "day": "23",
             "month": "MAY",
             "city": "LAS VEGAS",
@@ -137,6 +153,14 @@
             "continent":"NORTH-AMERICA"
         },
         {
+            "day": "28",
+            "month": "MAY",
+            "city": "LAS VEGAS",
+            "country": "USA",
+            "time":"20:00",
+            "continent":"NORTH-AMERICA"
+        },
+        {
             "day": "12",
             "month": "JUNE",
             "city": "BUSAN",
@@ -145,7 +169,7 @@
             "continent":"ASIA"
         },
         {
-            "day": 13,
+            "day": "13",
             "month": "JUNE",
             "city": "BUSAN",
             "country": "KR",

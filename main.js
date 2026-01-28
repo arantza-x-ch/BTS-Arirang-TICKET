@@ -2,9 +2,6 @@
 const WIDTH = 1000;
 const HEIGHT = 500;
 
-/* *** Variables *** */
-var concerts = null;
-
 /* *** DOM Elements *** */
 const canvas = document.getElementById('tiquet-canva');     //canvas
 const ctx = canvas.getContext('2d');
@@ -18,18 +15,38 @@ const addBtn5 = document.getElementById('addV');
 const addBtn6 = document.getElementById('addJK');
 const addBtn7 = document.getElementById('addBTS');
 
-//const addBtnChange = document.getElementById('addChange');
+const backBtn = document.getElementById('backBtn');         //stickers navigation buttons
+const nextBtn = document.getElementById('nextBtn');
+
+// Array of stickers buttons
+const btnStickers = [addBtn0, addBtn1, addBtn2, addBtn3, addBtn4, addBtn5, addBtn6, addBtn7];  
+// Array of stickers images 
+const imgStickers = ['Assets/21JIN.png', 'Assets/21RM.png','Assets/21SUGA.png','Assets/21JHOPE.png', 
+  'Assets/21JIMIN.png', 'Assets/21V.png','Assets/21JK.png', 'Assets/21VAN.png',
+  'Assets/22JIN.png','Assets/22RM.png','Assets/22SUGA.png','Assets/22JHOPE.png',
+  'Assets/22JIMIN.png','Assets/22V.png','Assets/22JK.png','Assets/bts-logo.png']
+const elementsPage = 8;                                     //paginacion
+const maxPage = (imgStickers.length / 8)-1;
+let actualPage = 0;
 
 const downloadBtn = document.getElementById('downloadBtn'); //aditional buttons
 const resetBtn = document.getElementById('resetBtn');
 
+const nameBtn = document.querySelector('#submitName');      //name-text
+let submitName = ' ';
+
 const finalImage = new Image();                             //background-image for canvas
+const marcImage = new Image();
 const dataURL = 'Assets/entrada4.png';
+
+/* *** Variables *** */
+var concerts = null;
 
 /* *** variables : Sticker State *** */
 let stickers = [];                // Array of {img, x, y, width, height, dragging}
 let dragOffset = { x: 0, y: 0 };  // Position
 let selectedSticker = null;
+let srcSticker = null;
 
 /* *** variable :  Date State *** */ 
 let selectedDate = null;
@@ -37,13 +54,16 @@ let selectedDate = null;
 /* *** Set Image Base (Tiquet) *** */
 finalImage.src = dataURL;
 finalImage.onload = () => drawCanvas(); 
-uploadData();
+marcImage.src = 'Assets/entrada21.png';
+uploadData(); 
 
 /* *** Draw Canva *** */
 function drawCanvas() 
 {
     ctx.clearRect(0, 0, WIDTH, HEIGHT);
     ctx.drawImage(finalImage, 0, 0, WIDTH, HEIGHT);
+    //ctx.drawImage(marcImage, 0,0, WIDTH, HEIGHT);
+
      
     //Set date concert
     if (selectedDate != null){  
@@ -75,13 +95,20 @@ function drawCanvas()
     stickers.forEach(sticker => {
         ctx.drawImage(sticker.img, sticker.x, sticker.y, sticker.width, sticker.height);
     });
+
+    //set name
+
+    canvas.style.letterSpacing = 1 + 'px';    // Name
+    ctx.fillStyle = "#f4132671";          
+    ctx.font = 'bold 20px Teko ';
+    ctx.fillText(submitName, 73, 400);       
 }
 
 /* *** Add 'Sticker' *** */
-function addSticker(src) 
-{
-    const img = new Image();
-    img.src = src;
+function addSticker() 
+{ 
+  const img = new Image();
+    img.src = srcSticker; 
 
     img.onload = () => {
         const sticker = {
@@ -92,8 +119,8 @@ function addSticker(src)
           height: img.height /3,
           dragging: false
         };
-        stickers.push(sticker);   // Agegar 'sticker' al Array
-        drawCanvas();             // Actualizar canvas
+        stickers.push(sticker);   // Add'sticker' to Array
+        drawCanvas();             // Update canvas
     };
 }
 
@@ -112,6 +139,7 @@ canvas.addEventListener('touchcancel', pointerUp);
 /* *** Get Touch Position *** */
 function getPointerPos(e) 
 {
+  console.log("uno");
   const rect = canvas.getBoundingClientRect();
   const scaleX = canvas.width / rect.width;
   const scaleY = canvas.height / rect.height;
@@ -131,35 +159,39 @@ function getPointerPos(e)
     y: (clientY - rect.top) * scaleY
   };
 }
-
 /* *** Drag and Drop Handlers *** */
 function pointerDown(e) 
 {
+  console.log("dos");
   const { x: mouseX, y: mouseY } = getPointerPos(e);
+
+  let deleteCheck = document.getElementById('deleteBtn');
 
   for (let i = stickers.length - 1; i >= 0; i--) 
     {
-      const s = stickers[i];
-      if (mouseX >= s.x && mouseX <= s.x + s.width &&
-          mouseY >= s.y && mouseY <= s.y + s.height) 
+      const sticky = stickers[i];
+      if (mouseX >= sticky.x && mouseX <= sticky.x + sticky.width &&
+          mouseY >= sticky.y && mouseY <= sticky.y + sticky.height) 
           {
-            selectedSticker = s;
-            s.dragging = true;
-            dragOffset.x = mouseX - s.x;
-            dragOffset.y = mouseY - s.y;
+            if (deleteCheck.checked) { 
+              stickers = stickers.filter(function(sticker) { return sticker !== sticky });
+            }else{
+            selectedSticker = sticky; 
+            sticky.dragging = true;
+            dragOffset.x = mouseX - sticky.x;
+            dragOffset.y = mouseY - sticky.y;
 
             stickers.splice(i, 1); //Bring sticker to front
-            stickers.push(s);
-
-            drawCanvas();
-            e.preventDefault();
-            break;
+            stickers.push(sticky);
+          }
+          drawCanvas();
+          e.preventDefault();
+          break;
           }
   }
 }
-
 function pointerMove(e) 
-{
+{ 
   if (!selectedSticker || !selectedSticker.dragging) return;
 
   const { x: mouseX, y: mouseY } = getPointerPos(e);
@@ -171,44 +203,50 @@ function pointerMove(e)
 }
 
 function pointerUp() 
-{
+{ 
   if (selectedSticker) selectedSticker.dragging = false;
   selectedSticker = null;
-}
-
-//here
+} 
 
 /* *** Button Event Listeners *** */
-/* *** (0-6) BTS21 Members Stickers *** */
-addBtn0.addEventListener('click', () =>
-  addSticker('Assets/21JIN.png')
-);
-addBtn1.addEventListener('click', () =>
-  addSticker('Assets/21RM.png')
-);
-addBtn2.addEventListener('click', () =>
-  addSticker('Assets/21SUGA.png')
-);
-addBtn3.addEventListener('click', () =>
-  addSticker('Assets/21JHOPE.png')
-);
-addBtn4.addEventListener('click', () =>
-  addSticker('Assets/21JIMIN.png')
-);
-addBtn5.addEventListener('click', () =>
-  addSticker('Assets/21V.png')
-);
-addBtn6.addEventListener('click', () =>
-  addSticker('Assets/21JK.png')
-); 
-/* *** (7) BTS Logo Stickers *** */
-addBtn7.addEventListener('click', () =>
-  addSticker('Assets/bts-logo.png')
-);
+/* *** Stickers *** */
+btnStickers.forEach( ( btn ) => {  
+    btn.addEventListener('click', () => { 
+      var style = getComputedStyle(btn, false);
+      srcSticker = style.backgroundImage.slice(5, -2);
+      addSticker();
+    }); 
+})
+
+/* *** Navigation Stickers *** */
+backBtn.addEventListener('click', () => {
+  if ( actualPage != 0 ) {  
+    actualPage--;   
+    updateStickersBackground();
+  }
+})
+nextBtn.addEventListener('click', () =>{
+  if ( actualPage != maxPage ) {  
+    actualPage++;  
+    updateStickersBackground();
+  } 
+}) 
+  
+/* *** Change Background Stickers Buttons *** */
+function updateStickersBackground() {
+  let indexStart = actualPage * 8;
+  btnStickers.forEach( ( btn, index ) => {
+    let finalIndex = indexStart + index; 
+    btn.style.backgroundImage = 'url('+ imgStickers[finalIndex] +')';
+  })
+}
+
 /* *** Additional Actions Buttons  *** */
 resetBtn.addEventListener('click', () => {
   stickers = [];   // clear all stickers
-  selectedDate = null
+  selectedDate = null;
+  nameBtn.value= '';
+  submitName = ' ';
   drawCanvas();    // redraw without stickers
 });
 downloadBtn.addEventListener('click', () => {
@@ -218,6 +256,10 @@ downloadBtn.addEventListener('click', () => {
     downloadCanva.download = 'BTS-ARIRANG-TIQUET.png';
     downloadCanva.click();
   }, 'image/png');
+});
+nameBtn.addEventListener('input', () =>{ 
+  submitName = nameBtn.value.toUpperCase(); 
+  drawCanvas();
 });
 document.addEventListener('DOMContentLoaded', () => {
   const logo = document.querySelector('.logo');
@@ -229,6 +271,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }
 });
+
 
 /* *** AJAX (JSON) *** */
 function uploadData()

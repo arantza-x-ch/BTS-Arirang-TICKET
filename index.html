@@ -15,11 +15,23 @@
         <div class="nav">  
             <div id="description">
                 <h1>¡Selecciona una fecha, agrega tantos stickers como quieras y disfruta!<br>¡¡¡No te olvides de descargarlo!!!</h1> 
+            </div> 
+        </div> 
+        <div id="content">
+            <div class="nav-buttons-container buttons-container-top"> 
+                <div class="buttons-container-side">
+                    <button id="resetBtn" class="sticker-btn reset-btn" title="Resetar Stickers, Fecha y Nombre">Reset</button>
+                     
+                    <input type="checkbox" name="deleteCheckBox" id="deleteBtn" value="deleteBtn" title="Eliminar Sticker"/>
+                    <label for="deleteBtn" title="Eliminar Sticker"></label>
+                </div> 
+                    <input  type="text" placeholder="INTRODUCE TU NOMBRE" id="submitName" maxlength="28" /> 
+                    
+                    <button  id="downloadBtn" class="sticker-btn downloadBtn" title="Descargar">Descargar</button>
+                        
             </div>
             <div class="sticker-container"> 
-                <div class="buttons-container"> 
-                    <button  id="downloadBtn" class="sticker-btn downloadBtn" title="Descargar">Descargar</button>
-
+                <div class="buttons-container-side"> 
                     <button id="addJN" class="sticker-btn JN-btn" title="Insertar sticker JIN">Add JN</button>
                     <button id="addNMJ" class="sticker-btn NMJ-btn" title="Insertar sticker RM">Add RM</button>
                     <button id="addSG" class="sticker-btn SG-btn" title="Insertar sticker SUGA">Add SG</button>
@@ -27,16 +39,18 @@
                     <button id="addJMN" class="sticker-btn JMN-btn" title="Insertar sticker JIMIN">Add JMN</button>
                     <button id="addV" class="sticker-btn V-btn" title="Insertar sticker V">Add V</button>
                     <button id="addJK" class="sticker-btn JK-btn" title="Insertar sticker JK">Add JK</button>
+                    <button id="addBTS" class="sticker-btn BTS-btn" title="Insertar sticker vAN/Logo BTS">Add VAN/Logo BTS</button>
+                    
+                    <button id="backBtn" class="back-btn" title="Anterior"></button>
+                    <button id="nextBtn" class="next-btn" title="Siguiente"></button> 
 
-                    <button id="addBTS" class="sticker-btn BTS-btn" title="Insertar sticker Logo BTS">Add Logo BTS</button>
-
-                    <button id="resetBtn" class="sticker-btn reset-btn" title="Resetar Stickers y Fecha">Reset</button>
                 </div>
             </div>
-        </div> 
-
-        <div id="canva-container">  
-            <canvas id="tiquet-canva" width="1000" height="500" style="font-family:teko;">
+        
+            <div id="canva-container">  
+                <canvas id="tiquet-canva" width="1000" height="500" style="font-family:teko;">
+            </div>
+ 
         </div>
         
         <div id="tour-container"> 
